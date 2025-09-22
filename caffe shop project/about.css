@@ -1,0 +1,151 @@
+input[type=checkbox] {
+    display: none;
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+    color: white;
+}
+ .one{
+        margin: 20px; 
+        padding: 15px;
+        width: 50%;
+        border: 2px solid black;
+      }
+      .two{
+         margin: 20px;
+          padding: 15px;
+           width: 10px;
+           height:10px;
+        }
+        .row11{
+            display:flex;
+            background-color:whitesmoke;
+        }
+        p{
+          font-size: 30px;
+          font-style: italic;
+        }
+        h1{
+          text-align: center;
+          background-color: bisque;
+        }
+          .column1{
+                margin-left:50px;
+                font-size:14px;
+            }
+            .column2{
+                margin-left:150px;
+                font-size: 14px;
+            }
+            .column3{
+                margin-left:350px;
+                font-size: 14px;
+            }
+            .column4{
+                margin-left:450px;
+                font-size: 14px;
+            }
+            .row1{
+              display:flex;
+            }
+        ul{
+                list-style-type: none;
+                padding: 0;
+                margin:0;
+                background-color:bisque;
+                overflow:hidden;
+            }
+            li{
+                float:left;
+            }
+            li a{
+                color: black;
+                text-decoration: black;
+                padding:35px;
+                display:block;
+                font-size: larger;
+            }
+            li a:hover{
+                color:blue;
+            }
+            @media screen and (max-width: 768px) {
+    .row1{
+        display:block;
+    }
+    .row11{
+        display:block;
+    }
+    .menu{
+        display:none;
+    }
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+    .hamburger{
+        display:block;
+    }
+     .one{
+        margin: 0; 
+        padding: 0;
+        width: 25%;
+        border: 2px solid black;
+      }
+      .two{
+         margin: 0;
+          padding: 0;
+           width: 25%;
+           height:25%;
+        }
+        .row11{
+            display:flex;
+            background-color:whitesmoke;
+        }
+        p{
+          font-size: 10px;
+          font-style: italic;
+        }
+        h1{
+          text-align: center;
+          background-color: bisque;
+        }
+          .column1{
+                margin-left:25px;
+                font-size:14px;
+            }
+            .column2{
+                margin-left:25px;
+                font-size: 14px;
+            }
+            .column3{
+                margin-left:25px;
+                font-size: 14px;
+            }
+            .column4{
+                margin-left:25px;
+                font-size: 14px;
+            }
+        ul{
+                list-style-type: none;
+                padding: 0;
+                margin:0;
+                background-color:bisque;
+                overflow:hidden;
+            }
+            li{
+                float:left;
+            }
+            li a{
+                color: black;
+                text-decoration: black;
+                padding:35px;
+                display:block;
+                font-size: larger;
+            }
+            li a:hover{
+                color:blue;
+            }
+}

@@ -1,0 +1,162 @@
+input[type=checkbox] {
+    display: none;
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+    color: white;
+}
+    .row {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      background-color: whitesmoke;
+    }
+
+    .column {
+      margin: 10px;
+      padding: 10px;
+      background-color:black;
+      text-align: center;
+    }
+
+    .column img {
+      width: 250px;
+      height: 250px;
+      display: block;
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    .column p {
+      color: white;
+      margin-top: 10px;
+      margin-bottom: 0;
+      padding: 0;
+    }
+    
+         .column1{
+                margin-left:50px;
+            }
+            .column2{
+                margin-left:150px;
+            }
+            .column3{
+                margin-left:350px;
+            }
+            .column4{
+                margin-left:450px;
+            }
+        .row1{
+            display:flex;
+        }
+        h1 {
+            text-align: center;
+            background-color: bisque;
+        }
+         ul{
+                list-style-type: none;
+                padding: 0;
+                margin:0;
+                background-color:bisque;
+                overflow:hidden;
+            }
+            li{
+                float:left;
+            }
+            li a{
+                color: black;
+                text-decoration: black;
+                padding:35px;
+                display:block;
+                font-size: larger;
+            }
+            li a:hover{
+                color:blue;
+            }
+@media screen and (max-width: 768px) {
+    .row1{
+        display:block;
+    }
+    .row{
+        display:block;
+    }
+    .menu{
+        display:none;
+    }
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+    .hamburger{
+        display:block;
+    }
+    .row {
+      justify-content: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      background-color: whitesmoke;
+    }
+
+    .column {
+      margin: 5px;
+      padding: 5px;
+      background-color:black;
+      text-align: center;
+    }
+
+    .column img {
+      width: 125px;
+      height: 125px;
+      display: block;
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    .column p {
+      color: white;
+      margin-top: 5px;
+      margin-bottom: 0;
+      padding: 0;
+    }
+    
+         .column1{
+                margin-left:25px;
+            }
+            .column2{
+                margin-left:25px;
+            }
+            .column3{
+                margin-left:25px;
+            }
+            .column4{
+                margin-left:25px;
+            }
+        h1 {
+            text-align: center;
+            background-color: bisque;
+        }
+         ul{
+                list-style-type: none;
+                padding: 0;
+                margin:0;
+                background-color:bisque;
+                overflow:hidden;
+            }
+            li{
+                float:left;
+            }
+            li a{
+                color: black;
+                text-decoration: black;
+                padding:17px;
+                display:block;
+                font-size: larger;
+            }
+            li a:hover{
+                color:blue;
+            }
+}
