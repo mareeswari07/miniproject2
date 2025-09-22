@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="load">Load Data</button>
+    <div id="result"></div>
+
+    <script>
+        $(document).ready(function () {
+            $("#load").click(function (){
+                $.ajax({
+                    url: "datas.json",
+                    type: "GET",
+                    dataType: "json",
+                    success: function (response) {
+                        $("#result").html(
+                            "name:" + response.name + "<br>" +
+                            "age:" + response.age + "<br>" +
+                            "place:" + response.place + "<br>"
+                        );
+                    },
+                    error: function () {
+                        $("#result").html("Error");
+                    }
+
+                })
+            });
+        });
+    </script>
+</body>
+
+</html>

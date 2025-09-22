@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = 10;
+        let b = 5;
+        let c = 4;
+        function largest(a, b, c){
+            if(a >= b && a >= c){
+                return "a is large";
+            }
+            else if(b >= a && b >= c){
+                return "b is greater";
+            }
+            else{
+                return "c is greater";
+            }
+        }
+        let result=largest(a, b, c);
+        document.body.innerHTML=result;
+    </script>
+</body>
+</html>
